@@ -8,8 +8,7 @@
 
 /* THANKS */
   Chef and Editor: Sandra Salazar
-  Chef and Editor: Nuria Lambas
-  Chef: Patricia Peña
+  Chef and Editor: Alvaro Salazar
 
 /* SITE */
   Last update: 2013/01/22
