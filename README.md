@@ -1,4 +1,4 @@
 sala2jquery
 ===========
 
-Wordpress mobile App
+Wordpress mobile App using jQuery Mobile
