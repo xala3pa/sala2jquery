@@ -1,0 +1,20 @@
+/* humanstxt.org */
+
+/* TEAM */
+  Developer: Alvaro Salazar
+  Site: www.sala2recetario.es
+  Twitter: @xala3pa ,@sala2recetario
+  Location: Trespaderne, Burgos ,Spain
+
+/* THANKS */
+  Chef and Editor: Sandra Salazar
+  Chef and Editor: Nuria Lambas
+  Chef: Patricia Peña
+
+/* SITE */
+  Last update: 2013/01/22
+  Language: Castellano
+  Doctype: HTML5
+  IDE: Sublime Text 2
+  Components: jQuery Mobile, JStorage.js
+ 

@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Recetario Sala2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+<meta http-equiv="cleartype" content="on">
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css"/>
+<link rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>
+<script type="text/javascript" charset="utf-8">
+    // Wait for Cordova to load
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Cordova is ready
+    function onDeviceReady() {
+        navigator.splashscreen.show();
+    }
+</script>
+<script type='text/javascript' id='lt_ws' src='http://localhost:56976/socket.io/lighttable/ws.js'></script>
+<body>
+<div id="categoryListPage" data-role="page" >
+	<div data-role="header" data-position="fixed">
+		<h1>Categorías</h1>
+	</div>
+
+	<div data-role="content">
+
+    	<ul data-role="listview">
+			<li>
+				<a href="recipelist.html?category=Carnes" class="ui-link-inherit">
+					<img src="./images/carnes.jpg" class="ui-li-thumb"/>
+					<h3 class="ui-li-heading">Carnes</h3>
+					<p class="ui-li-desc">Recetas con base de carne</p>
+				</a>
+			</li>
+			<li>
+				<a href="recipelist.html?category=Cocina en miniatura" class="ui-link-inherit">
+					<img src="./images/pintxo.jpg" class="ui-li-thumb"/>
+					<h3 class="ui-li-heading">Cocina en minuatura</h3>
+					<p class="ui-li-desc">Pintxos pués!</p>
+				</a>
+			</li>
+			<li>
+				<a href="recipelist.html?category=Comidas del mundo" class="ui-link-inherit">
+					<img src="./images/comida_del_mundo.jpg" class="ui-li-thumb"/>
+					<h3 class="ui-li-heading">Comidas del mundo</h3>
+					<p class="ui-li-desc">De aquí y de allí</p>
+				</a>
+			</li>
+			<li>
+				<a href="recipelist.html?category=ensalada" class="ui-link-inherit">
+					<img src="./images/ensaladas.jpg" class="ui-li-thumb"/>
+					<h3 class="ui-li-heading">Ensaladas</h3>
+					<p class="ui-li-desc">Sano, sano</p>
+				</a>
+			</li>
+			<li>
+				<a href="recipelist.html?category=Entre pan y pan" class="ui-link-inherit">
+					<img src="./images/pan.jpg" class="ui-li-thumb"/>
+					<h3 class="ui-li-heading">Entre pan y pan</h3>
+					<p class="ui-li-desc">...bocadillos</p>
+				</a>
+			</li>
+			<li>
+				<a href="recipelist.html?category=Galletas" class="ui-link-inherit">
+					<img src="./images/galletas.jpg" class="ui-li-thumb"/>
+					<h3 class="ui-li-heading">Galletas</h3>
+					<p class="ui-li-desc">ñam, ñam</p>
+				</a>
+			</li>
+			<li>
+				<a href="recipelist.html?category=Las recetas de la abuela" class="ui-link-inherit">
+					<img src="./images/recetas_abuela.jpg" class="ui-li-thumb"/>
+					<h3 class="ui-li-heading">Las recetas de la abuela</h3>
+					<p class="ui-li-desc">De hoy y de siempre</p>
+				</a>
+			</li>
+			<li>
+				<a href="recipelist.html?category=Panaderia Sala2" class="ui-link-inherit">
+					<img src="./images/panaderia.jpg" class="ui-li-thumb"/>
+					<h3 class="ui-li-heading">Panadería Sala2</h3>
+					<p class="ui-li-desc">Pan con pan</p>
+				</a>
+			</li>
+			<li>
+				<a href="recipelist.html?category=Pescados" class="ui-link-inherit">
+					<img src="./images/pescados.jpg" class="ui-li-thumb"/>
+					<h3 class="ui-li-heading">Pescados</h3>
+					<p class="ui-li-desc">Del mar a tu mesa</p>
+				</a>
+			</li>
+			<li>
+				<a href="recipelist.html?category=Postres" class="ui-link-inherit">
+					<img src="./images/postres.jpg" class="ui-li-thumb"/>
+					<h3 class="ui-li-heading">Postres</h3>
+					<p class="ui-li-desc">De la mesa al michelín</p>
+				</a>
+			</li>
+			<li>
+				<a href="recipelist.html?category=Setas" class="ui-link-inherit">
+					<img src="./images/setas.jpg" class="ui-li-thumb"/>
+					<h3 class="ui-li-heading">Setas</h3>
+					<p class="ui-li-desc">Del monte a tu mesa</p>
+				</a>
+			</li>
+		</ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed" >
+		<div data-role="navbar">
+			<ul>
+				<li>
+					<a href="#" data-icon="home">
+					<span class="ui-btn-text">Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="favorites.html" data-icon="star">
+					<span class="ui-btn-text">Favoritos</span>
+					</a>
+				</li>
+				<li>
+					<a href="aphabeticalList.html" data-prefetch  data-icon="grid">
+					<span class="ui-btn-text">Listado</span>
+					</a>
+				</li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/mobileinit.js"></script>
+	<script src="js/json2.js"></script>
+	<script src="js/jstorage.js"></script>
+	<script src="js/jquery-ajax-jstorage-cache.js"></script>
+	<script src="js/jquery.mobile-1.2.0.min.js"></script>
+	<script src="js/recipeCategories.js"></script>
+	<script src="js/alphabeticalList.js"></script>
+	<script src="js/recipelist.js"></script>
+	<script src="js/recipedetails.js"></script>
+	<script src="js/favorites.js"></script>
+</body>
+
+</html>

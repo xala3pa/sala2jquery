@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+    
+  <body>
+    
+
+    <div id="detailsPage" data-role="page" data-add-back-btn="true" data-back-btn-text="volver">
+
+      <div data-role="header">
+        <h1 id="recipeTitle"></h1>
+      </div>
+
+      <div data-role="content"> 
+    
+        <div id="recipeDetail">
+          
+          <div data-role="content">
+
+            <div data-role="popup" id="dialogo" data-theme="a" >
+              <div data-role="content" data-theme="d"  style="text-align: center;">
+                <h3>¿Quieres añadir la receta a tus favoritos?</h3>
+                <p>Podrás consultarlas más tarde.</p>
+                <a href="#" id="saveBack" data-icon="back" data-role="button" data-inline="true" data-rel="back">NO</a>
+                <a href="#" id="saveFav" data-icon="star" data-role="button" data-inline="true" data-theme="b">SI</a>
+              </div>
+            </div>
+          
+          </div>
+
+        </div>
+        
+
+      </div>
+
+    <div data-role="footer" data-position="fixed" >   
+      <div data-role="navbar">
+        <ul>
+          <li>
+            <a href="index.html" data-prefetch  data-icon="home">
+              <span class="ui-btn-text">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#dialogo" data-rel="popup" data-position-to="window" data-icon="star">
+              <span class="ui-btn-text">Favoritos</span>
+            </a>
+          </li>
+          <li>
+            <a href="aphabeticalList.html" data-prefetch  data-icon="grid">
+              <span class="ui-btn-text">Listado</span>
+            </a>
+          </li>
+        </ul>
+      </div><!-- /navbar -->
+    </div><!-- /footer -->
+
+    </div>
+
+  </body>
+
+</html>
